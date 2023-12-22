@@ -101,7 +101,7 @@
 
     static authRedirecting() {
       window.setTimeout(() => {
-        window.location.replace('http://127.0.0.1:5502/client-side.html'); 
+        window.location.replace('https://maheshpawar20.github.io/smart-canteen-site/client-side.html'); 
       }, 500)
     }
 
@@ -118,7 +118,7 @@
     firebaseAuthRedirect(){
       firebase.auth().onAuthStateChanged(function(user) {
         // If user is registered -
-        user ?  window.location.replace('http://127.0.0.1:5502/client-side.html') : console.log('none');
+        user ?  window.location.replace('https://maheshpawar20.github.io/smart-canteen-site/client-side.html') : console.log('none');
       });
     }
   }
@@ -229,7 +229,7 @@
             title: 'Logged Out Successfully',
           })
           firebase.auth().signOut().then(() => {
-            window.location.replace("http://127.0.0.1:5502/index.html")
+            window.location.replace("https://maheshpawar20.github.io/smart-canteen-site/index.html")
           });
         });
       })
